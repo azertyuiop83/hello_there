@@ -7,8 +7,7 @@
         <script src="script.js"></script>
     </head>
     <body>
-
-
+        <!--Main header with the logo and a search bar-->
         <header class="top_header">
             <a class="logo" href=""> <!-- Set page link here -->
                 <img class="my_logo" src="images/logo.jpg" alt="" aria-hidden="true" width="90" height="90">
@@ -16,7 +15,32 @@
                     <img class="id_card" src="images/logo_container.png" width="200" height="42">
                 </span>
             </a>
+            <div id="search" role="search">
+                <h3>
+                    <label for="searchInput">Rechercher</label>
+                </h3>
+                <form id="searchform" action="index.html">
+                    <div id="simpleSearch" data-search-loc="header-moved">
+                        <input id="searchInput" type="search" name="search" placeholder="Rechercher sur le site" autocapitalize="sentences" title="Rechercher sur le site" accesskey="f" autocomplete="off">
+                        <input type="hidden" name="title" value="Special:Recherche">
+                        <input id="searchButton" class="searchButton" type="submit" name="go" value="Lire" title="Acceder a une page du meme nom si elle existe">
+                    </div>
+                </form>
+            </div>
         </header>
+        <!-- Menu de navigation du site -->
+        <ul class="navbar">
+            <li><a href="index.html">Home page</a>
+            <li><a href="doc.html">Doc</a>
+            <li><a href="notes.html">Notes</a>
+            <li><a href="chall.html">chall</a>
+        </ul>
+
+        <h1>Here we are</h1>
+        <p>Cette page contient des documents, liens et notes accumulées avec le temps.</p>
+
+        <!--D-->
+        <address>Fait le 24 décembre 2020<br>Par Jane Doe</address>
 
 
     </body>
